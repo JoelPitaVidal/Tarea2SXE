@@ -57,3 +57,8 @@ Al salir de la terminal con -`shift d` se apaga el contenedor
 
 Para comprobar la cantidad de memória usada por ambos contenedores utilizamos el comando -`sudo docker system df -v`
 viendo que dam_alp1 ocupa 21B y dam_alp2 ocupa 40B
+
+>7:¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?
+
+Para saberlo debémos abrir otra terminál y arrancar uno de los contenedóres, para posteriorménte 
+utilizar el comando:-`sudo docker stats` y ver las estdísticas de este
