@@ -1,7 +1,7 @@
 # Tarea2SXE
 Contenedores con Docker.
 
-##Pásos seguidos durante el proceso:
+## Pásos seguidos durante el proceso:
 
 >1:Descarga la imagen "alpine" SIN ARRANCARLA y comprueba que está en tu equipo
 
@@ -53,3 +53,7 @@ Finálmente con:-`ping 172.17.0.2` hacemos ping a dam_alp1, confirmando que si e
 
 Al salir de la terminal con -`shift d` se apaga el contenedor
 
+>7:¿Cuanta memoria en el disco duro ocupaste?
+
+Para comprobar la cantidad de memória usada por ambos contenedores utilizamos el comando -`sudo docker system df -v`
+viendo que dam_alp1 ocupa 21B y dam_alp2 ocupa 40B
