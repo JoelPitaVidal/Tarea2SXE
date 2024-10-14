@@ -29,3 +29,13 @@ que especificámos el parámetro **--name**
 Para poder iniciarlo y acceder directamente a el utilizarémos el siguiente comando:
 -`start --attach -i dam_alp1`
 con **--attack** accedemos directamente
+
+
+>Comprueba que ip tiene y si puedes hacer un ping a google.com
+
+Comprobamos la ip con el comando:-`ip a`,comprobando que en este caso es la 
+**172.17.0.2** 
+
+Realizamos un ping a Google con el comando:-`ping www.google.com`
+y comprobamos que envía y recibe los paquetes de datos, demostrando que 
+si puede hacer ping
