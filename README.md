@@ -31,7 +31,7 @@ Para poder iniciarlo y acceder directamente a el utilizarémos el siguiente coma
 con **--attack** accedemos directamente
 
 
->Comprueba que ip tiene y si puedes hacer un ping a google.com
+>4:Comprueba que ip tiene y si puedes hacer un ping a google.com
 
 Comprobamos la ip con el comando:-`ip a`,comprobando que en este caso es la 
 **172.17.0.2** 
@@ -39,3 +39,17 @@ Comprobamos la ip con el comando:-`ip a`,comprobando que en este caso es la
 Realizamos un ping a Google con el comando:-`ping www.google.com`
 y comprobamos que envía y recibe los paquetes de datos, demostrando que 
 si puede hacer ping
+
+>5:Crea un contenedor con el nombre 'dam_alp2'. ¿Puedes hacer ping entre los contenedores?
+
+Creamos el contenedor con el comando anteriormente mencionado:
+-`sudo docker container create -i -t --name dam_alp2 alpine`
+
+y con el comando:-`start --attach -i dam_alp2` lo iniciámos.
+
+Finálmente con:-`ping 172.17.0.2` hacemos ping a dam_alp1, confirmando que si es posible
+
+>6:Sal del terminal, ¿que ocurrió con el contenedor?
+
+Al salir de la terminal con -`shift d` se apaga el contenedor
+
